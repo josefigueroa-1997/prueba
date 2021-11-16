@@ -13,8 +13,12 @@ public class JavaApplication3 {
         obj.setnumeros(n1,n2);
         int n = obj.getsuma();
         int r = obj.getresta();
+        int m = obj.getmultiplicacion();
+        int d = obj.getdivision();
         JOptionPane.showMessageDialog(null, "La suma de los dos numeros es igual a: "+n);
         JOptionPane.showMessageDialog(null, "La resta de los dos numeros es igual a: "+r);
+        JOptionPane.showMessageDialog(null, "La multiplicación de los dos numeros es igual a: "+m);
+        JOptionPane.showMessageDialog(null, "La división de los dos numeros es igual a: "+d);
     }
     
 }

@@ -10,7 +10,7 @@ package javaapplication3;
  * @author holan
  */
 public class numeros {
-    private int n1,n2, suma,resta;
+    private int n1,n2, suma,resta, multiplicacion, division;
     
     public numeros(){
     
@@ -33,11 +33,31 @@ public class numeros {
         return resta;
     }
     
+    private int multiplico(){
+    
+        this.multiplicacion = n1*n2;
+        return multiplicacion;
+    }
+    
+    private int divido(){
+    
+        this.division = n1/n2;
+        return division;
+    }
+    
     public int getsuma(){
         return suma();
     }
     
     public int getresta(){
         return resta();
+    }
+    
+    public int getmultiplicacion(){
+        return multiplico();
+    }
+    
+    public int getdivision(){
+        return divido();
     }
 }
