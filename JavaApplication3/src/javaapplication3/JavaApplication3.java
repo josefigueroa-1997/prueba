@@ -14,9 +14,11 @@ public class JavaApplication3 {
    
     public static void main(String[] args) {
         numeros obj = new numeros();
-        obj.numeros(1, 2);
+        obj.setnumeros(4,2);
         int n = obj.getsuma();
+        int r = obj.getresta();
         System.out.println(n);
+        System.out.println(r);
     }
     
 }

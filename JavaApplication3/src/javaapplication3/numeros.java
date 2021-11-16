@@ -10,12 +10,12 @@ package javaapplication3;
  * @author holan
  */
 public class numeros {
-    private int n1,n2, suma;
+    private int n1,n2, suma,resta;
     
     public numeros(){
     
     }
-    public void numeros(int n1,int n2){
+    public void setnumeros(int n1,int n2){
     
         this.n1 = n1;
         this.n2=n2;
@@ -27,7 +27,17 @@ public class numeros {
         return suma;
     }
     
+    private int resta(){
+    
+        this.resta = n1-n2;
+        return resta;
+    }
+    
     public int getsuma(){
         return suma();
+    }
+    
+    public int getresta(){
+        return resta();
     }
 }
