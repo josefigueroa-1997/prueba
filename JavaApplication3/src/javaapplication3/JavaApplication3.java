@@ -1,24 +1,20 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package javaapplication3;
 
-/**
- *
- * @author holan
- */
+import javax.swing.*;
 public class JavaApplication3 {
-
-   
+    
     public static void main(String[] args) {
         numeros obj = new numeros();
-        obj.setnumeros(4,2);
+        String num1 = JOptionPane.showInputDialog("Ingrese un numero");
+        String num2 = JOptionPane.showInputDialog("Ingrese un numero");
+        int n1 = Integer.parseInt(num1);
+        int n2 = Integer.parseInt(num2);
+        obj.setnumeros(n1,n2);
         int n = obj.getsuma();
         int r = obj.getresta();
-        System.out.println(n);
-        System.out.println(r);
+        JOptionPane.showMessageDialog(null, "La suma de los dos numeros es igual a: "+n);
+        JOptionPane.showMessageDialog(null, "La resta de los dos numeros es igual a: "+r);
     }
     
 }
