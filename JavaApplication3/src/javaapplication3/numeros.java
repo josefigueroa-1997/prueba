@@ -11,7 +11,7 @@ package javaapplication3;
  */
 public class numeros {
     private int n1,n2, suma,resta, multiplicacion, division;
-    
+    private boolean primo;
     public numeros(){
     
     }
@@ -45,6 +45,29 @@ public class numeros {
         return division;
     }
     
+    private boolean esprimo(){
+        
+        this.primo = false;
+        int suma = 0;
+        for (int i=1;i<=n1;i++){
+        
+            if (n1%i==0){
+                suma++;
+            }
+        }
+        if (suma==2){
+            this.primo=true;
+        }
+        return primo;
+    }
+    
+    private boolean iguales(int num){
+        boolean iguales = false;
+        if (num==n1){
+            iguales = true;
+        }
+        return iguales;
+    }
     public int getsuma(){
         return suma();
     }
@@ -59,5 +82,14 @@ public class numeros {
     
     public int getdivision(){
         return divido();
+    }
+    
+    public boolean getprimo(){
+    
+        return esprimo();
+    }
+    
+    public boolean getiguales(int n){
+        return iguales(n);
     }
 }
